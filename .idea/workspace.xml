@@ -2,10 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f5b4c67-9fc8-494f-85a6-40a6192e5bcf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/map/GerryMandering.log" beforeDir="false" afterPath="$PROJECT_DIR$/map/GerryMandering.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/GerryMandering.log.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/algorithm/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/MapController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Cluster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/ClusterEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Demographic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/District.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Precinct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/PrecinctEdge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/repository/PrecinctRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/repository/StateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/server/PrecinctService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/server/StateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/MessageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketIoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cewit/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/GerryMandering.log" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/GerryMandering.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/MapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/algorithm/Algorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/controller/AlgorithmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/AlgorithmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/controller/MapController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/AlgoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/AlgoType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Cluster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/ClusterEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Demographic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/District.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/HashMapConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/HashMapConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/MajorMinor.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/MajorMinor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Measure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Party.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Party.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Precinct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/PrecinctEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/repository/PrecinctRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/repository/ResultRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/repository/ResultRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/repository/StateRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/server/PrecinctService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/server/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/server/ResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/server/StateService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/server/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/main/java/cewit/map/server/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/websocket/MessageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/websocket/SocketIoConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/websocket/SocketRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/java/cse308/map/websocket/SocketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/test/java/cse308/map/MapApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/test/java/cse308/map/MapApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map/src/test/java/map/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/cewit/src/test/java/map/demo/DemoApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,8 +76,48 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ConferenceApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/EventController.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cewit/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="cewit.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cewit/cewit.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="SocketService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketService.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cewit/src/main/java/cse308/map/MapApplication.java" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -28,8 +130,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="885" />
-    <option name="y" value="97" />
-    <option name="width" value="979" />
+    <option name="y" value="95" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -37,26 +139,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="back_end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="back_end" type="462c0819:PsiDirectoryNode" />
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ConferenceBackend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConferenceBackend" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cewit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cewit" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -127,11 +264,15 @@
       <updated>1558663450878</updated>
       <workItem from="1558663452292" duration="15000" />
       <workItem from="1558747632168" duration="3000" />
+      <workItem from="1559014676406" duration="101000" />
+      <workItem from="1559015092285" duration="1121000" />
+      <workItem from="1559021756072" duration="29000" />
+      <workItem from="1559022372422" duration="49000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18000" />
+    <option name="totallyTimeSpent" value="1318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -146,10 +287,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32968536" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -170,5 +311,74 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/cewit.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/cewit.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/cewit.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/websocket/SocketService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cewit/src/main/java/cewit/map/ConferenceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
