@@ -10,12 +10,16 @@ public class Event {
     @Id
     private String title;
     private String hostname;
-    @Temporal(TemporalType.TIMESTAMP)
+//    @Temporal(TemporalType.TIMESTAMP)
     private Date starttime;
-    @Temporal(TemporalType.TIMESTAMP)
+//    @Temporal(TemporalType.TIMESTAMP)
     private Date endtime;
     private String room;
     private String track;
+    @Transient
+    private String starttimes;
+    @Transient
+    private String endtimes;
 
 
     public String getTitle() {
@@ -66,5 +70,21 @@ public class Event {
 
     public void setEndtime(Date endtime) {
         this.endtime = endtime;
+    }
+
+    public String getStarttimes() {
+        return starttimes;
+    }
+
+    public void setStarttimes(String starttimes) {
+        this.starttimes = starttimes;
+    }
+
+    public String getEndtimes() {
+        return endtimes;
+    }
+
+    public void setEndtimes(String endtimes) {
+        this.endtimes = endtimes;
     }
 }
