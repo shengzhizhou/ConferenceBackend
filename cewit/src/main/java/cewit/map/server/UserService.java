@@ -15,21 +15,22 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public User registerUser(User user){
+    public User registerUser(User user) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String hashedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(hashedPassword);
         return userRepository.save(user);
     }
 
-    public Iterable<User> findAll(){
+    public Iterable<User> findAll() {
         return userRepository.findAll();
     }
 
-    public Optional<User> findById(String email){
-        return  userRepository.findById(email);
+    public Optional<User> findById(String email) {
+        return userRepository.findById(email);
     }
-    public void deleted(String email){
+
+    public void deleted(String email) {
         userRepository.deleteById(email);
     }
 
@@ -40,14 +41,14 @@ public class UserService {
         } else {
             BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
             String hashedPassword = passwordEncoder.encode(user.getPassword());
-            if (passwordEncoder.matches(user.getPassword(),opt.get().getPassword())) {//check if the password is corrected.
+            if (passwordEncoder.matches(user.getPassword(), opt.get().getPassword())) {//check if the password is corrected.
                 return true;
-            }
-            else
-            return false;
+            } else
+                return false;
         }
     }
-    public void updateUser(User user){
+
+    public void updateUser(User user) {
         userRepository.save(user);
     }
 

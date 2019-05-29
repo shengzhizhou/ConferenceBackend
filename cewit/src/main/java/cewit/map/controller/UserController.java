@@ -18,6 +18,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
     @PostMapping(value = "/signin")//check the user exist in the database or not
     public ResponseEntity<?> signIn(@RequestBody User user) {
         Boolean status = userService.isValidUser(user);//check if the user exist
@@ -33,16 +34,15 @@ public class UserController {
 
     @PostMapping(value = "/signup")//save the state to the database
     public ResponseEntity<?> signUp(@Valid @RequestBody User user) {
-        if(userService.findById(user.getEmail()).isPresent()){
+        if (userService.findById(user.getEmail()).isPresent()) {
             System.out.println("user already exist");
             return new ResponseEntity<>("user already exist ", HttpStatus.CONFLICT);//409
-        }else {
+        } else {
             User newUser = userService.registerUser(user);//save the model into database
             System.out.println("register completed. ");
             return new ResponseEntity<User>(newUser, HttpStatus.OK);
         }
     }
-
 
 
 }

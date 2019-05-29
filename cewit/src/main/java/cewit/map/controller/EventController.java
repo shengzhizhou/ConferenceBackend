@@ -1,4 +1,5 @@
 package cewit.map.controller;
+
 import cewit.map.model.Event;
 import cewit.map.model.User;
 import cewit.map.server.EventService;
@@ -21,20 +22,24 @@ import java.util.Optional;
 public class EventController {
     @Autowired
     private EventService eventService;
+
     @PostMapping(value = "/loadAllEvent")//check the user exist in the database or not
     public ResponseEntity<?> findAllEvent() {
         Iterable<Event> events = eventService.findAll();
-        List<Event> eventList  = new ArrayList<>();
-        for(Event event: events){
+        List<Event> eventList = new ArrayList<>();
+        for (Event event : events) {
             eventList.add(event);
         }
         return new ResponseEntity<List<Event>>(eventList, HttpStatus.OK);
     }
+
     @PostMapping(value = "/addEvent")//check the user exist in the database or not
     public ResponseEntity<?> addEvent(@RequestBody Event event) {
-
+        if (event.getTitle().length() == 0) {
+            return new ResponseEntity<>("add successful", HttpStatus.NOT_FOUND);
+        }
         SimpleDateFormat output = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        System.out.println(event.getEndtimes()+" "+event.getStarttimes());
+        System.out.println(event.getEndtimes() + " " + event.getStarttimes());
         try {
             Date st = output.parse(event.getStarttimes());
             event.setStarttime(st);
@@ -51,7 +56,6 @@ public class EventController {
     @PostMapping(value = "/deleteEvent")//check the user exist in the database or not
     public ResponseEntity<?> deletedUsers(@RequestBody Event event) {
         eventService.isValidEvent(event);
-
         eventService.delete(event);
         return new ResponseEntity<>("finish deleted event", HttpStatus.OK);
     }
